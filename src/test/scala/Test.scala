@@ -7,7 +7,7 @@ class Test extends FlatSpec with DiagrammedAssertions {
     assert(true)
   }
 
-  //it should "False" in {
-  //  assert(false)
-  //}
+  it should "False" in {
+    assert(false)
+  }
 }

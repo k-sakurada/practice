@@ -14,3 +14,4 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 libraryDependencies += "com.typesafe" % "config" % "1.3.2"
 libraryDependencies += "com.microsoft.azure" % "azure-storage" % "7.0.0"
+scalacOptions in (Compile,doc) ++= Seq("-groups", "-implicits", "-diagrams")

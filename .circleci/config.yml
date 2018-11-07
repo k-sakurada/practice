@@ -37,6 +37,10 @@ jobs:
     # run tests!
     - run: cat /dev/null | sbt test:test
 
+    - run: pwd
+    - run: ls
+    - run: git --version
+
   # deploy方法 参考
   # https://qiita.com/yousan/items/08de8c3b81b21a57bd5c
   deploy:

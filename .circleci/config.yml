@@ -30,13 +30,15 @@ jobs:
 
     - run: dot -V
 
-    - run: cat /dev/null | sbt test:compile
+    # - run: cat /dev/null | sbt test:compile
 
-    - save_cache:
-        paths:
-          - ~/.m2
-        key: v1-dependencies--{{ checksum "build.sbt" }}
+    #- save_cache:
+    #    paths:
+    #      - ~/.m2
+    #    key: v1-dependencies--{{ checksum "build.sbt" }}
 
+    # run tests!
+    - run: cat /dev/null | sbt test:test
 
 
   # deploy方法 参考

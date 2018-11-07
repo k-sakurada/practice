@@ -16,16 +16,13 @@ jobs:
     steps:
     - checkout
 
+    - run: sudo apt-get install -y graphviz
+
     # Download and cache dependencies
     - restore_cache:
         keys:
         - v1-dependencies-{{ checksum "build.sbt" }}
         # fallback to using the latest cache if no exact match is found
-        - v1-dependencies-
-
-    - run: sudo apt-get install -y graphviz
-    - restore_cache:
-        keys:
         - v1-dependencies-
 
     - run: dot -V
@@ -40,12 +37,12 @@ jobs:
     # run tests!
     - run: cat /dev/null | sbt test:test
 
-
   # deploy方法 参考
   # https://qiita.com/yousan/items/08de8c3b81b21a57bd5c
   deploy:
     machine: true
     steps:
+    - run: ls
     - run: git --version
 
 workflows:
@@ -53,4 +50,6 @@ workflows:
   workflow:
     jobs:
     - build
-    - deploy
+    - deploy:
+        requires:
+        - build

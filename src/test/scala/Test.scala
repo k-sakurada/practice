@@ -9,13 +9,13 @@ class Test extends FlatSpec with DiagrammedAssertions with GivenWhenThen with Ma
     .master("local[*]")
     .config("spark.some.config.option", "some-value")
     .getOrCreate()
-
   import spark.implicits._
+
   "Test" should "True" in {
     assert(true)
   }
 
-  "df count" should "2" in {
+  "df" should "2行あること" in {
     Given("2行のdfを作成")
     val df: DataFrame = Seq(1,2).toDF
 
@@ -24,5 +24,16 @@ class Test extends FlatSpec with DiagrammedAssertions with GivenWhenThen with Ma
 
     Then("countが2であること")
     assert(count == 2)
+  }
+
+  it should "3行あること" in {
+    Given("3行のdfを作成")
+    val df: DataFrame = Seq(1,2,3).toDF
+
+    When("df.count")
+    val count: Long = df.count()
+
+    Then("countが3であること")
+    assert(count == 3)
   }
 }

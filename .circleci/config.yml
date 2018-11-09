@@ -55,8 +55,12 @@ jobs:
     steps:
     - attach_workspace:
         at: .
-    - run: ls
-    - run: git status
+    - run: git config --global push.default simple
+    - run: git config user.email "circleci@virtualex.co.jp"
+    - run: git config user.name "circleci"
+    - run: git add .
+    - run: git commit -m "[ci skip] update docs"
+    - run: git push
 
 workflows:
   version: 2

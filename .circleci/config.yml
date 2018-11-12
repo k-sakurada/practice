@@ -34,17 +34,14 @@ jobs:
           - ~/.m2
         key: v1-dependencies--{{ checksum "build.sbt" }}
 
-    # run tests!
-    #- run: cat /dev/null | sbt test:test
-
+    # doc作成
     - run: cat /dev/null | sbt doc
     - run: cp -r ./target/scala-2.11/api/* docs/api/
 
+    # test & coverage report作成
     - run: cat /dev/null | sbt clean coverage test
-    - run: cp -r ./target/scala-2.11/scoverage-data/* docs/cod/
     - run: cat /dev/null | sbt coverageReport
     - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
-
 
     - persist_to_workspace:
         root: .

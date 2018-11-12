@@ -35,12 +35,13 @@ jobs:
         key: v1-dependencies--{{ checksum "build.sbt" }}
 
     # run tests!
-    - run: cat /dev/null | sbt test:test
+    #- run: cat /dev/null | sbt test:test
 
     - run: cat /dev/null | sbt doc
+    - run: cp ./target/scala-2.11/api/* docs/api/
 
-    - run: cat /dev/null | sbt coverageReport
     - run: cat /dev/null | sbt clean coverage test
+    - run: cp ./target/scala-2.11/scoverage-report/* docs/coverage/
 
     - persist_to_workspace:
         root: .
@@ -63,7 +64,7 @@ jobs:
     - run: git config --global push.default simple
     - run: git config user.email "circleci@virtualex.co.jp"
     - run: git config user.name "circleci"
-    - run: git add .
+    - run: git add docs/*
     - run: git commit -m "[ci skip] update docs"
     - run: git push
 

@@ -36,4 +36,16 @@ class Test extends FlatSpec with DiagrammedAssertions with GivenWhenThen with Ma
     Then("countが3であること")
     assert(count == 3)
   }
+
+  it should "4行あること" in {
+    Given("4行のdfを作成")
+    val df: DataFrame = Seq(1,2,3,4).toDF
+
+    When("df.count")
+    val count: Long = df.count()
+
+    Then("countが4であること")
+    assert(count == 4)
+  }
+
 }

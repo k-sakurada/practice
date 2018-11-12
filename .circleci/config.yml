@@ -37,6 +37,11 @@ jobs:
     # run tests!
     - run: cat /dev/null | sbt test:test
 
+    - run: cat /dev/null | sbt doc
+
+    - run: cat /dev/null | sbt coverageReport
+    - run: cat /dev/null | sbt clean coverage test
+
     - persist_to_workspace:
         root: .
         paths:

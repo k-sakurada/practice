@@ -41,9 +41,9 @@ jobs:
     - run: cp -r ./target/scala-2.11/api/* docs/api/
 
     - run: cat /dev/null | sbt clean coverage test
-    - run: cd ./target/scala-2.11 | ls | cd ../..
+    - run: ls ./target/scala-2.11/
     - run: cat /dev/null | sbt coverageReport
-    - run: cd ./target/scala-2.11 | ls | cd ../..
+    - run: ls ./target/scala-2.11/
     - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
 
 

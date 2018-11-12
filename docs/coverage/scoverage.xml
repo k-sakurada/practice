@@ -1,0 +1,104 @@
+<scoverage 
+statement-count="25" statements-invoked="0" statement-rate="0.00" branch-rate="0.00" version="1.0" timestamp="1541992902313">
+    <packages>
+        <package name="&lt;empty&gt;" statement-count="25" statements-invoked="0" statement-rate="0.00">
+            <classes>
+                <class 
+                name="SparkSQLExample" filename="SparkSQLExample.scala" statement-count="25" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="&lt;empty&gt;/SparkSQLExample/main" statement-count="4" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="main" start="1626" end="1657" line="47" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="main" start="1700" end="1712" line="50" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="main" start="1341" end="1489" line="41" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="main" start="1662" end="1694" line="48" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="&lt;empty&gt;/SparkSQLExample/runBasicDataFrameExample" statement-count="13" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="4034" end="4099" line="146" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="2427" end="2451" line="78" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="3024" end="3056" line="106" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="1831" end="1882" line="55" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="3402" end="3414" line="121" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="3364" end="3397" line="120" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="3797" end="3849" line="136" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="2275" end="2291" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="2867" end="2896" line="98" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="2614" end="2651" line="88" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="3310" end="3346" line="118" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="3676" end="3709" line="133" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runBasicDataFrameExample" start="1943" end="1952" line="58" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="&lt;empty&gt;/SparkSQLExample/runDatasetCreationExample" statement-count="8" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="5013" end="5013" line="175" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="4736" end="4755" line="170" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="4935" end="4969" line="174" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="5026" end="5041" line="176" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="4508" end="4526" line="162" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="4473" end="4503" line="161" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="4760" end="4792" line="171" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="SparkSQLExample" class-type="Object" full-class-name="SparkSQLExample" source="/home/circleci/repo/src/main/scala/SparkSQLExample.scala" method="runDatasetCreationExample" start="4989" end="5021" line="175" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

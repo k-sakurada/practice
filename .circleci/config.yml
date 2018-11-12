@@ -38,10 +38,10 @@ jobs:
     #- run: cat /dev/null | sbt test:test
 
     - run: cat /dev/null | sbt doc
-    - run: cp ./target/scala-2.11/api/* docs/api/
+    - run: cp -r ./target/scala-2.11/api/* docs/api/
 
     - run: cat /dev/null | sbt clean coverage test
-    - run: cp ./target/scala-2.11/scoverage-report/* docs/coverage/
+    - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
 
     - persist_to_workspace:
         root: .

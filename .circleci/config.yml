@@ -35,13 +35,14 @@ jobs:
         key: v1-dependencies--{{ checksum "build.sbt" }}
 
     # doc作成
-    - run: cat /dev/null | sbt doc
-    - run: cp -r ./target/scala-2.11/api/* docs/api/
+    - run: scaladoc
+    # - run: cat /dev/null | sbt doc
+    # - run: cp -r ./target/scala-2.11/api/* docs/api/
 
     # test & coverage report作成
-    - run: cat /dev/null | sbt clean coverage test
-    - run: cat /dev/null | sbt coverageReport
-    - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
+    # - run: cat /dev/null | sbt clean coverage test
+    # - run: cat /dev/null | sbt coverageReport
+    # - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
 
     - persist_to_workspace:
         root: .
@@ -73,6 +74,6 @@ workflows:
   workflow:
     jobs:
     - build
-    - deploy:
-        requires:
-        - build
+    #- deploy:
+    #    requires:
+    #    - build

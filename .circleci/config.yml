@@ -27,35 +27,29 @@ jobs:
 
     - run: dot -V
 
-    #- run: cat /dev/null | sbt test:compile
+    - run: cat /dev/null | sbt test:compile
 
-    #- save_cache:
-    #    paths:
-    #      - ~/.m2
-    #    key: v1-dependencies--{{ checksum "build.sbt" }}
+    - save_cache:
+        paths:
+          - ~/.m2
+        key: v1-dependencies--{{ checksum "build.sbt" }}
 
-    # doc作成
-    - run: scaladoc
-    # - run: cat /dev/null | sbt doc
-    # - run: cp -r ./target/scala-2.11/api/* docs/api/
+     # doc作成
+     - run: cat /dev/null | sbt doc
+     - run: cp -r ./target/scala-2.11/api/* docs/api/
 
-    # test & coverage report作成
-    # - run: cat /dev/null | sbt clean coverage test
-    # - run: cat /dev/null | sbt coverageReport
-    # - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
+     # test & coverage report作成
+     - run: cat /dev/null | sbt clean coverage test
+     - run: cat /dev/null | sbt coverageReport
+     - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
 
+    # [共有ディレクトリの指定](https://circleci.com/docs/2.0/deployment-integrations/#section=deployment)
     - persist_to_workspace:
         root: .
         paths:
           - .
 
-  # TODO:
-  # 共有ディレクトリの指定
-  # https://circleci.com/docs/2.0/deployment-integrations/#section=deployment
-
-
-  # deploy方法 参考
-  # https://qiita.com/yousan/items/08de8c3b81b21a57bd5c
+  # [deploy方法](https://qiita.com/yousan/items/08de8c3b81b21a57bd5c)
   deploy:
     machine: true
     working_directory: ~/repo

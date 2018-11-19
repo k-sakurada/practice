@@ -25,8 +25,6 @@ jobs:
         # fallback to using the latest cache if no exact match is found
         - v1-dependencies-
 
-    - run: dot -V
-
     - run: cat /dev/null | sbt test:compile
 
     - save_cache:
@@ -36,12 +34,12 @@ jobs:
 
     # doc作成
     - run: cat /dev/null | sbt doc
-    - run: cp -r ./target/scala-2.11/api/* docs/api/
+    - run: cp -r ./target/scala-2.12/api/* docs/api/
 
     # test & coverage report作成
     - run: cat /dev/null | sbt clean coverage test
     - run: cat /dev/null | sbt coverageReport
-    - run: cp -r ./target/scala-2.11/scoverage-report/* docs/coverage/
+    - run: cp -r ./target/scala-2.12/scoverage-report/* docs/coverage/
 
     # [共有ディレクトリの指定](https://circleci.com/docs/2.0/deployment-integrations/#section=deployment)
     - persist_to_workspace:

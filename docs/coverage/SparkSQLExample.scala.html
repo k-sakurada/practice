@@ -595,13 +595,13 @@
           org.apache.spark.sql.DatasetHolder.toDS
         </td>
         <td style="background: #F0ADAD">
-          spark.implicits.localSeqToDatasetHolder[SparkSQLExample.Person](collection.this.Seq.apply[SparkSQLExample.Person](SparkSQLExample.this.Person.apply(&quot;Andy&quot;, 32L)))(spark.implicits.newProductEncoder[SparkSQLExample.Person](({
+          spark.implicits.localSeqToDatasetHolder[SparkSQLExample.Person](scala.collection.Seq.apply[SparkSQLExample.Person](SparkSQLExample.this.Person.apply(&quot;Andy&quot;, 32L)))(spark.implicits.newProductEncoder[SparkSQLExample.Person](({
   val $u: reflect.runtime.universe.type = scala.reflect.runtime.`package`.universe;
   val $m: $u.Mirror = scala.reflect.runtime.`package`.universe.runtimeMirror(this.getClass().getClassLoader());
   $u.TypeTag.apply[SparkSQLExample.Person]($m, {
-    final class $typecreator2 extends TypeCreator {
-      def &lt;init&gt;(): $typecreator2 = {
-        $typecreator2.super.&lt;init&gt;();
+    final class $typecreator5 extends TypeCreator {
+      def &lt;init&gt;(): $typecreator5 = {
+        $typecreator5.super.&lt;init&gt;();
         ()
       };
       def apply[U &lt;: scala.reflect.api.Universe with Singleton]($m$untyped: scala.reflect.api.Mirror[U]): U#Type = {
@@ -610,7 +610,7 @@
         $u.internal.reificationSupport.selectType($m.staticModule(&quot;SparkSQLExample&quot;).asModule.moduleClass, &quot;Person&quot;).asType.toTypeConstructor
       }
     };
-    new $typecreator2()
+    new $typecreator5()
   })
 }: reflect.runtime.universe.TypeTag[SparkSQLExample.Person]))).toDS()
         </td>
@@ -654,7 +654,7 @@
           org.apache.spark.sql.DatasetHolder.toDS
         </td>
         <td style="background: #F0ADAD">
-          spark.implicits.localSeqToDatasetHolder[Int](collection.this.Seq.apply[Int](1, 2, 3))(spark.implicits.newIntEncoder).toDS()
+          spark.implicits.localSeqToDatasetHolder[Int](scala.collection.Seq.apply[Int](1, 2, 3))(spark.implicits.newIntEncoder).toDS()
         </td>
       </tr><tr>
         <td>
@@ -714,16 +714,16 @@
           ApplyToImplicitArgs
         </td>
         <td>
-          org.apache.spark.sql.SQLImplicits.newProductEncoder
+          org.apache.spark.sql.LowPrioritySQLImplicits.newProductEncoder
         </td>
         <td style="background: #F0ADAD">
           spark.implicits.newProductEncoder[SparkSQLExample.Person](({
   val $u: reflect.runtime.universe.type = scala.reflect.runtime.`package`.universe;
   val $m: $u.Mirror = scala.reflect.runtime.`package`.universe.runtimeMirror(this.getClass().getClassLoader());
   $u.TypeTag.apply[SparkSQLExample.Person]($m, {
-    final class $typecreator3 extends TypeCreator {
-      def &lt;init&gt;(): $typecreator3 = {
-        $typecreator3.super.&lt;init&gt;();
+    final class $typecreator9 extends TypeCreator {
+      def &lt;init&gt;(): $typecreator9 = {
+        $typecreator9.super.&lt;init&gt;();
         ()
       };
       def apply[U &lt;: scala.reflect.api.Universe with Singleton]($m$untyped: scala.reflect.api.Mirror[U]): U#Type = {
@@ -732,7 +732,7 @@
         $u.internal.reificationSupport.selectType($m.staticModule(&quot;SparkSQLExample&quot;).asModule.moduleClass, &quot;Person&quot;).asType.toTypeConstructor
       }
     };
-    new $typecreator3()
+    new $typecreator9()
   })
 }: reflect.runtime.universe.TypeTag[SparkSQLExample.Person]))
         </td>
@@ -759,9 +759,9 @@
   val $u: reflect.runtime.universe.type = scala.reflect.runtime.`package`.universe;
   val $m: $u.Mirror = scala.reflect.runtime.`package`.universe.runtimeMirror(this.getClass().getClassLoader());
   $u.TypeTag.apply[SparkSQLExample.Person]($m, {
-    final class $typecreator3 extends TypeCreator {
-      def &lt;init&gt;(): $typecreator3 = {
-        $typecreator3.super.&lt;init&gt;();
+    final class $typecreator9 extends TypeCreator {
+      def &lt;init&gt;(): $typecreator9 = {
+        $typecreator9.super.&lt;init&gt;();
         ()
       };
       def apply[U &lt;: scala.reflect.api.Universe with Singleton]($m$untyped: scala.reflect.api.Mirror[U]): U#Type = {
@@ -770,7 +770,7 @@
         $u.internal.reificationSupport.selectType($m.staticModule(&quot;SparkSQLExample&quot;).asModule.moduleClass, &quot;Person&quot;).asType.toTypeConstructor
       }
     };
-    new $typecreator3()
+    new $typecreator9()
   })
 }: reflect.runtime.universe.TypeTag[SparkSQLExample.Person])))
         </td>

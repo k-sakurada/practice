@@ -17,5 +17,3 @@ libraryDependencies += "com.typesafe" % "config" % "1.3.2"
 libraryDependencies += "com.microsoft.azure" % "azure-storage" % "7.0.0"
 scalacOptions in (Compile,doc) ++= Seq("-groups", "-implicits", "-diagrams")
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-h", "docs/test/", "-eNDXEHLO")
-
-// x
